@@ -3,7 +3,7 @@
 
 O principal objetivo de uma análise exploratória de dados é o de encontrar informações relevantes. Ou seja, dizer se os dados podem retornar valor ou não para determinado segmento. 
 
-Neste contexto, a partir da base de dados disponibilizada [aqui](https://github.com/joelsonSantos/banco_de_dados-aula7/tree/main/aula%207), será feita a descrição de um processo de análise de dados com:
+Neste contexto, a partir da base de dados disponibilizada [aqui](https://data.world/jerrys/sql-12-applying-functions-in-sql/workspace/data-dictionary), será feita a descrição de um processo de análise de dados com:
 
 1) Perguntas serem respondidas a partir dos dados;
 
@@ -15,4 +15,4 @@ Neste contexto, a partir da base de dados disponibilizada [aqui](https://github.
 
 5) A partir das **views** contruídas, será criado um dashboard para mostrar os insights obtidos.
 
-Dicionário dos Dados: https://data.world/jerrys/sql-12-applying-functions-in-sql/workspace/data-dictionary
+Repositório Inicial do Projeto: https://github.com/joelsonSantos/banco_de_dados-aula7/tree/main/aula%207
