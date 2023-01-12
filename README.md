@@ -15,4 +15,4 @@ Neste contexto, a partir da base de dados disponibilizada [aqui](https://data.wo
 
 5) A partir das **views** contruídas, será criado um dashboard para mostrar os insights obtidos.
 
-Repositório Inicial do Projeto: https://github.com/joelsonSantos/banco_de_dados-aula7/tree/main/aula%207
+*Repositório inicial do projeto: https://github.com/joelsonSantos/banco_de_dados-aula7/tree/main/aula%207*
