@@ -6,6 +6,8 @@ O principal objetivo de uma análise exploratória de dados é o de encontrar in
 Neste contexto, a partir da base de dados disponibilizada [aqui](https://data.world/jerrys/sql-12-applying-functions-in-sql/workspace/data-dictionary), será feita a descrição de um processo de análise de dados com:
 
 1) Perguntas serem respondidas a partir dos dados;
+11 - Qual país compra mais? Qual produto mais vendido por país?
+12 - Qual a relação entre o tipo de entrega e os cancelamentos?
 
 2) Desenvolvimento de scripts de "ingestão" dos dados (arquivos `produtos.csv` e `vendas.csv`) em tabelas do PostgreSQL.
 
