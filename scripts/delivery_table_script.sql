@@ -77,20 +77,29 @@ SELECT
 	tcs."ship-country",
 	tcs."ship-service-level",
 	SUM(tcs.total_sales) AS total_sales, 
-	SUM(sbnf.shipped_but_not_fulfilled) AS shipped_but_not_fulfilled,
-	SUM(saf.shipped_and_fulfilled) AS shipped_and_fulfilled,
-	SUM(fbc.fulfilled_but_cancelled) AS fulfilled_but_cancelled,
-	SUM(canf.cancelled_and_not_fulfilled) AS cancelled_and_not_fulfilled
+	sbnf.shipped_but_not_fulfilled AS shipped_but_not_fulfilled,
+	saf.shipped_and_fulfilled AS shipped_and_fulfilled,
+	fbc.fulfilled_but_cancelled AS fulfilled_but_cancelled,
+	canf.cancelled_and_not_fulfilled AS cancelled_and_not_fulfilled
 FROM view_total_country_sales AS tcs
 FULL JOIN view_shipped_but_not_fulfilled AS sbnf 
 ON tcs."ship-country" = sbnf."ship-country"
+AND tcs."ship-service-level" = sbnf."ship-service-level" 
 FULL JOIN view_shipped_and_fulfilled AS saf 
 ON tcs."ship-country" = saf."ship-country"
+AND tcs."ship-service-level" = saf."ship-service-level" 
 FULL JOIN view_fulfilled_but_cancelled AS fbc 
 ON tcs."ship-country" = fbc."ship-country"
+AND tcs."ship-service-level" = fbc."ship-service-level" 
 FULL JOIN view_cancelled_and_not_fulfilled AS canf 
 ON tcs."ship-country" = canf."ship-country"
-GROUP BY tcs."ship-country", tcs."ship-service-level" 
+AND tcs."ship-service-level" = canf."ship-service-level" 
+GROUP BY tcs."ship-country", 
+tcs."ship-service-level",
+sbnf.shipped_but_not_fulfilled,
+saf.shipped_and_fulfilled,
+fbc.fulfilled_but_cancelled,
+canf.cancelled_and_not_fulfilled
 );
 
 
