@@ -1,10 +1,10 @@
 
 ## Projeto Banco de Dados I - Análise Exploratória de Dados
 
-Grupo - Tiago
-      - Alysson Laerte da Silva Vinagre
-      - Francisco Lemuel Ferreira Lima
-      - Henrique Leão
+Grupo - Tiago Câmara de Oliveira Lima  
+      - Alysson Laerte da Silva Vinagre  
+      - Francisco Lemuel Ferreira Lima  
+      - Henrique Leão  
 
 O principal objetivo de uma análise exploratória de dados é o de encontrar informações relevantes. Ou seja, dizer se os dados podem retornar valor ou não para determinado segmento. 
 
